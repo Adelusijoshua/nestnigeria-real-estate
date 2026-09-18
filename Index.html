@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestNigeria | Real Estate for Smart Buyers</title>
+    <meta
+      name="description"
+      content="Find verified homes, rental opportunities, and investment insights across Nigeria with NestNigeria."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.CSS" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand-mark">N</div>
+          <div>
+            <span class="brand-name">NestNigeria</span>
+            <small>Property partners</small>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#listings">Listings</a>
+          <a href="#market">Market</a>
+          <a href="#calculator">Calculator</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="primary-btn">List a property</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Nigeria's smarter way to buy, sell & invest</span>
+            <h1>Find the right property in Lagos, Abuja, and Port Harcourt.</h1>
+            <p>
+              Access verified homes, land opportunities, and rental investments built for
+              Nigeria’s fast-moving real-estate market.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn">View properties</button>
+              <button class="secondary-btn">Talk to an agent</button>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>2,400+</strong>
+                <span>verified listings</span>
+              </div>
+              <div>
+                <strong>18 cities</strong>
+                <span>coverage</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>client rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-card">
+              <div class="mini-label">Featured investment</div>
+              <h3>Azure Crest Residences</h3>
+              <p>2 & 3-bedroom apartments in Lekki Phase 1</p>
+              <div class="panel-meta">
+                <span>₦ 85M</span>
+                <span>14% ROI</span>
+              </div>
+              <ul>
+                <li>24/7 security</li>
+                <li>Covered parking</li>
+                <li>Estate facilities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section container" id="listings">
+        <div class="search-box">
+          <div class="field">
+            <label>Location</label>
+            <select id="locationFilter">
+              <option value="all">All cities</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Abuja">Abuja</option>
+              <option value="Port Harcourt">Port Harcourt</option>
+              <option value="Ibadan">Ibadan</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Property type</label>
+            <select id="typeFilter">
+              <option value="all">All types</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Duplex">Duplex</option>
+              <option value="Land">Land</option>
+              <option value="Office">Office</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Budget</label>
+            <select id="budgetFilter">
+              <option value="all">Any budget</option>
+              <option value="low">Under ₦ 20M</option>
+              <option value="mid">₦ 20M - ₦ 60M</option>
+              <option value="high">₦ 60M - ₦ 150M</option>
+              <option value="luxury">Above ₦ 150M</option>
+            </select>
+          </div>
+
+          <button class="primary-btn" id="showList">Find property</button>
+        </div>
+      </section>
+
+      <section class="listings container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow alt">Featured listings</span>
+            <h2>Best opportunities this week</h2>
+          </div>
+          <a href="#contact">Request a shortlist</a>
+        </div>
+
+        <div class="property-grid" id="propertyGrid"></div>
+      </section>
+
+      <section class="market container" id="market">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow alt">Market pulse</span>
+            <h2>Nigeria real-estate trends</h2>
+          </div>
+        </div>
+
+        <div class="insight-grid">
+          <div class="insight-card accent">
+            <div class="insight-top">
+              <span>Average rental yield</span>
+              <strong>8.4%</strong>
+            </div>
+            <p>Strongest in Lekki, Gwarinpa, and Port Harcourt Garden City.</p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-top">
+              <span>Price growth</span>
+              <strong>+12.3%</strong>
+            </div>
+            <p>Annual appreciation in prime residential zones across urban centers.</p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-top">
+              <span>Demand index</span>
+              <strong>High</strong>
+            </div>
+            <p>Increasing interest from first-time buyers and diaspora investors.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator container" id="calculator">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow alt">Mortgage estimator</span>
+            <h2>Estimate your monthly payment</h2>
+          </div>
+        </div>
+
+        <div class="calculator-grid">
+          <div class="calculator-form">
+            <div class="field inline">
+              <label>Property Price (₦)</label>
+              <input id="propertyPrice" type="number" value="25000000" min="1000000" />
+            </div>
+
+            <div class="field inline">
+              <label>Down Payment (₦)</label>
+              <input id="downPayment" type="number" value="5000000" min="0" />
+            </div>
+
+            <div class="field inline">
+              <label>Loan Term (Years)</label>
+              <input id="loanTerm" type="number" value="15" min="1" max="30" />
+            </div>
+
+            <div class="field inline">
+              <label>Interest Rate (%)</label>
+              <input id="interestRate" type="number" value="14.5" min="1" step="0.1" />
+            </div>
+
+            <button class="primary-btn" id="calculateBtn">Calculate</button>
+          </div>
+
+          <div class="summary-card">
+            <h3>Loan Summary</h3>
+            <div class="summary-row">
+              <span>Loan amount</span>
+              <strong id="loanAmount">₦ 20,000,000</strong>
+            </div>
+            <div class="summary-row">
+              <span>Monthly payment</span>
+              <strong id="monthlyPayment">₦ 0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Total repayment</span>
+              <strong id="totalRepayment">₦ 0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Interest payable</span>
+              <strong id="interestPayable">₦ 0</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us container">
+        <div class="section-header center">
+          <div>
+            <span class="eyebrow alt">Why choose us</span>
+            <h2>Built for the Nigerian market</h2>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon">✓</div>
+            <h3>Verified listings</h3>
+            <p>Only trusted developers and sellers with transparent pricing and clear titles.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">📍</div>
+            <h3>Smart location data</h3>
+            <p>Compare ROI, neighborhood growth, and accessibility across major Nigerian cities.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">💬</div>
+            <h3>Expert support</h3>
+            <p>Talk to a property consultant for investment guidance and site visit scheduling.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <div class="contact-card">
+          <div>
+            <span class="eyebrow alt">Book a visit</span>
+            <h2>Need help finding your next property?</h2>
+          </div>
+
+          <form id="contactForm">
+            <div class="contact-grid">
+              <input type="text" placeholder="Full name" required />
+              <input type="email" placeholder="Email address" required />
+            </div>
+            <div class="contact-grid">
+              <input type="tel" placeholder="Phone number" required />
+              <select>
+                <option>Buying</option>
+                <option>Selling</option>
+                <option>Renting</option>
+                <option>Investing</option>
+              </select>
+            </div>
+            <textarea rows="4" placeholder="Tell us what you’re looking for"></textarea>
+            <button type="submit" class="primary-btn">Submit request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand">
+            <div class="brand-mark">N</div>
+            <div>
+              <span class="brand-name">NestNigeria</span>
+              <small>Property partners</small>
+            </div>
+          </div>
+        </div>
+        <p>© 2026 NestNigeria. Built for modern Nigerian property investment.</p>
+      </div>
+    </footer>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
