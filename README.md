@@ -2,7 +2,7 @@
  
 **A responsive real-estate marketing website with live property filtering and a built-in mortgage calculator.**
  
-Live demo: _add your GitHub Pages / hosting link here_
+Live demo:(https://homenestnigeria.netlify.app/)
 Tech: **HTML5 · CSS3 · Vanilla JavaScript**
  
 ---
