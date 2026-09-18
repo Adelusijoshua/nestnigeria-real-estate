@@ -31,6 +31,7 @@ NestNigeria is a front-end concept website for a Nigerian real-estate platform, 
 ├── Index.html      # Page markup and structure
 ├── Style.CSS        # All styling (design tokens, layout, responsive rules)
 ├── Script.js         # Property data, filtering logic, mortgage calculator, form handling
+├── screenshot.png     # Homepage preview image used in this README
 └── README.md         # Project documentation (this file)
 ```
  
@@ -94,11 +95,7 @@ This is a static site with no build tools or dependencies required.
  
 ## 📷 Preview
  
-_Add a screenshot or GIF of the live site here once deployed, e.g.:_
- 
-```markdown
 ![NestNigeria homepage](screenshot.png)
-```
  
 ---
  
